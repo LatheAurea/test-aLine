@@ -353,3 +353,4 @@ trouble.7z
 
 # The rule "[Bb]in/" is too strong.
 !Files\ -\ Agent/Httpd/bin/
+!FakesAssemblies

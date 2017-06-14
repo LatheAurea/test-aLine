@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestFakes.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:TestFakes.Fakes.ShimCalculator">
+            <summary>Shim type of TestFakes.Calculator</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.ShimCalculator.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.ShimCalculator.#ctor(TestFakes.Calculator)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:TestFakes.Fakes.ShimCalculator.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.ShimCalculator.AllInstances.DoInt32">
+            <summary>Sets the shim of Calculator.Do(Int32 start)</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.ShimCalculator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.ShimCalculator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.ShimCalculator.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.ShimCalculator.ConstructorIDependency">
+            <summary>Sets the shim of Calculator.Calculator(IDependency dependency)</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.ShimCalculator.DoInt32">
+            <summary>Sets the shim of Calculator.Do(Int32 start)</summary>
+        </member>
+        <member name="T:TestFakes.Fakes.ShimDependency">
+            <summary>Shim type of TestFakes.Dependency</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.ShimDependency.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.ShimDependency.#ctor(TestFakes.Dependency)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:TestFakes.Fakes.ShimDependency.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.ShimDependency.AllInstances.DoInt32">
+            <summary>Sets the shim of Dependency.Do(Int32 start)</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.ShimDependency.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.ShimDependency.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.ShimDependency.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.ShimDependency.Bind(TestFakes.IDependency)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.ShimDependency.Constructor">
+            <summary>Sets the shim of Dependency.Dependency()</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.ShimDependency.CountGet">
+            <summary>Sets the shim of Dependency.get_Count()</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.ShimDependency.DoInt32">
+            <summary>Sets the shim of Dependency.Do(Int32 start)</summary>
+        </member>
+        <member name="T:TestFakes.Fakes.StubCalculator">
+            <summary>Stub type of TestFakes.Calculator</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.StubCalculator.#ctor(TestFakes.IDependency)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.StubCalculator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.StubCalculator.InitializeStub">
+            <summary>Initializes a new instance of type StubCalculator</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.StubCalculator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.StubCalculator.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:TestFakes.Fakes.StubDependency">
+            <summary>Stub type of TestFakes.Dependency</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.StubDependency.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.StubDependency.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.StubDependency.InitializeStub">
+            <summary>Initializes a new instance of type StubDependency</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.StubDependency.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:TestFakes.Fakes.StubDependency.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:TestFakes.Fakes.StubIDependency">
+            <summary>Stub type of TestFakes.IDependency</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.StubIDependency.#ctor">
+            <summary>Initializes a new instance of type StubIDependency</summary>
+        </member>
+        <member name="F:TestFakes.Fakes.StubIDependency.DoInt32">
+            <summary>Sets the stub of IDependency.Do(Int32 start)</summary>
+        </member>
+        <member name="M:TestFakes.Fakes.StubIDependency.TestFakes#IDependency#Do(System.Int32)">
+            <summary>Sets the stub of IDependency.Do(Int32 start)</summary>
+        </member>
+    </members>
+</doc>
