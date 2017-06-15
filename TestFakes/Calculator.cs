@@ -19,5 +19,10 @@ namespace TestFakes
         {
             return _dependency.Do(start);
         }
+
+        public int GetCurrentYear()
+        {
+            return DateTime.Today.Year;
+        }
     }
 }

@@ -35,5 +35,22 @@ namespace UnitTestFakes
                 Assert.AreEqual(1, result);
             }
         }
+
+        [TestMethod]
+        public void TestCurrentYear()
+        {
+            int fixedYear = 2000;
+
+            using (ShimsContext.Create())
+            {
+                System.Fakes.ShimDateTime.TodayGet =
+                () =>
+                { return new DateTime(fixedYear, 1, 1); };
+
+                var calculator = new Calculator(new Dependency());
+                int result = calculator.GetCurrentYear();
+                Assert.AreEqual(fixedYear, result);
+            }
+        }
     }
 }
