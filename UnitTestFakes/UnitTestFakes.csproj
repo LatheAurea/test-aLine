@@ -44,6 +44,30 @@
       <HintPath>Libs\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.XML" />
+    <Reference Include="TestFakes.Fakes">
+      <HintPath>FakesAssemblies\TestFakes.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib.Fakes">
+      <HintPath>FakesAssemblies\mscorlib.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Fakes">
+      <HintPath>FakesAssemblies\System.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Fakes">
+      <HintPath>FakesAssemblies\System.Data.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Fakes">
+      <HintPath>FakesAssemblies\System.Web.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Fakes">
+      <HintPath>FakesAssemblies\System.Web.Extensions.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML.Fakes">
+      <HintPath>FakesAssemblies\System.XML.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TestCalculator.cs" />
@@ -55,8 +79,16 @@
       <Name>TestFakes</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Fakes\" />
+    <Fakes Include="Fakes\Microsoft.SharePoint.fakes" />
+    <Fakes Include="Fakes\mscorlib.fakes" />
+    <Fakes Include="Fakes\System.Data.fakes" />
+    <Fakes Include="Fakes\System.fakes" />
+    <Fakes Include="Fakes\System.Web.Extensions.fakes" />
+    <Fakes Include="Fakes\System.Web.fakes" />
+    <Fakes Include="Fakes\System.XML.fakes" />
+    <Fakes Include="Fakes\TestFakes.fakes" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
