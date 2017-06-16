@@ -43,16 +43,7 @@
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
       <HintPath>Libs\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
     </Reference>
-    <Reference Include="mscorlib.4.0.0.0.Fakes">
-      <HintPath>FakesAssemblies\mscorlib.4.0.0.0.Fakes.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.4.0.0.0.Fakes">
-      <HintPath>FakesAssemblies\System.4.0.0.0.Fakes.dll</HintPath>
-    </Reference>
-    <Reference Include="TestFakes.Fakes">
-      <HintPath>FakesAssemblies\TestFakes.Fakes.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TestCalculator.cs" />
@@ -65,17 +56,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Fakes Include="Fakes\TestFakes.fakes" />
-  </ItemGroup>
-  <ItemGroup>
-    <Fakes Include="Fakes\System.fakes">
-      <SubType>Designer</SubType>
-    </Fakes>
-  </ItemGroup>
-  <ItemGroup>
-    <Fakes Include="Fakes\mscorlib.fakes">
-      <SubType>Designer</SubType>
-    </Fakes>
+    <Folder Include="Fakes\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
