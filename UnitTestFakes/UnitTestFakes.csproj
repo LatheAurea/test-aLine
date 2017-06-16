@@ -81,7 +81,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Fakes Include="Fakes\Microsoft.SharePoint.fakes" />
     <Fakes Include="Fakes\mscorlib.fakes" />
     <Fakes Include="Fakes\System.Data.fakes" />
     <Fakes Include="Fakes\System.fakes" />
