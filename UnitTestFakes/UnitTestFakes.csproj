@@ -79,15 +79,8 @@
       <Name>TestFakes</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Fakes Include="Fakes\mscorlib.fakes" />
-    <Fakes Include="Fakes\System.Data.fakes" />
-    <Fakes Include="Fakes\System.fakes" />
-    <Fakes Include="Fakes\System.Web.Extensions.fakes" />
-    <Fakes Include="Fakes\System.Web.fakes" />
-    <Fakes Include="Fakes\System.XML.fakes" />
-    <Fakes Include="Fakes\TestFakes.fakes" />
+    <Folder Include="Fakes\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
